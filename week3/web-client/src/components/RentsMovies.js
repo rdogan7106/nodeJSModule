@@ -9,7 +9,6 @@ const RentsMovies = ({ rentsList, deleteRent }) => {
           <tr>
             <td>id</td>
             <td>duration</td>
-            <td>person</td>
             <td></td>
           </tr>
         </thead>
@@ -17,8 +16,8 @@ const RentsMovies = ({ rentsList, deleteRent }) => {
           {rentsList.map((movie) => (
             <tr>
               <td key={movie.id}> {movie.id}</td>
-              <td>{movie.duration}</td>
-              <td>{movie.person}</td>
+              <td>{movie.title}</td>
+
               <td className="text-center">
                 <i
                   className="fa-solid fa-trash-can text-danger"
